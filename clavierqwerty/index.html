@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="main.mjs"></script>
+</head>
+
+<body>
+	<div class="controls">
+		<button id="bouton-qwerty" type="button">Passer en QWERTY </button>
+	</div>
+		
+  <!-- Controls removed: layout is fixed to AZERTY and values are inlined in buttons -->
+  <div class="container">
+    <!-- Keys: use buttons with stable numeric data-index (1..30) -->
+    <button class="key" data-symbol="A">A</button>
+    <button class="key" data-symbol="Z">Z</button>
+    <button class="key" data-symbol="E">E</button>
+    <button class="key" data-symbol="R">R</button>
+    <button class="key" data-symbol="T">T</button>
+    <button class="key" data-symbol="Y">Y</button>
+    <button class="key" data-symbol="U">U</button>
+    <button class="key" data-symbol="I">I</button>
+    <button class="key" data-symbol="O">O</button>
+    <button class="key" data-symbol="P">P</button>
+    <button class="key" data-symbol="Q">Q</button>
+    <button class="key" data-symbol="S">S</button>
+    <button class="key" data-symbol="D">D</button>
+    <button class="key" data-symbol="F">F</button>
+    <button class="key" data-symbol="G">G</button>
+    <button class="key" data-symbol="H">H</button>
+    <button class="key" data-symbol="J">J</button>
+    <button class="key" data-symbol="K">K</button>
+    <button class="key" data-symbol="L">L</button>
+    <button class="key" data-symbol="M">M</button>
+    <button class="key" data-symbol="W">W</button>
+    <button class="key" data-symbol="X">X</button>
+    <button class="key" data-symbol="C">C</button>
+    <button class="key" data-symbol="V">V</button>
+    <button class="key" data-symbol="B">B</button>
+    <button class="key" data-symbol="N">N</button>
+    <button class="key" data-symbol=",">,</button>
+    <button class="key" data-symbol=";">;</button>
+    <button class="key" data-symbol=":">:</button>
+    <button class="key" data-symbol="?">?</button>
+    <!-- Bottom row: ESP (space) spans 5 columns, DEL spans 5 columns -->
+    <button class="key space" data-action="space" data-symbol=" ">ESP</button>
+    <button class="key del" data-action="del" aria-label="Delete">←</button>
+  </div>
+  <div class="choices"></div>
+</body>
+
+</html>
